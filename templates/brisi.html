@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+        To je vnos, in ga želimo izbirsati <br>
+        {{sporocilo.vsebina}} <br>
+        Ali res želiš izbrisati vnos?
+        <form action="/sporocilo/brisi/{{sporocilo.key.id()}}" method="post">
+            <input type="submit" value="Potrdi!">
+        </form>
+</body>
+</html>
